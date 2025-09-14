@@ -1,0 +1,22 @@
+#-*- mode: gitignore -*-
+
+# General
+.DS_Store
+
+# Python
+*.pyc
+__pycache__/
+venv/
+.env
+
+# Django
+db.sqlite3
+media/
+
+# Frontend
+Frontend/node_modules/
+Frontend/dist/
+
+# IDEs
+.idea/
+.vscode/
