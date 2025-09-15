@@ -24,7 +24,7 @@ const SearchResult = () => {
 
   useEffect(() => {
     if (searchQuery) {
-      fetchData(`/pexels-api/v1/search?query=${searchQuery}`)
+      fetchData(`https://api.pexels.com/v1/search?query=${searchQuery}`)
         .then((response) => {
           if (response) {
             setSearchResults(response.photos);
