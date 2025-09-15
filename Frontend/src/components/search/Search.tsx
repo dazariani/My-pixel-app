@@ -1,6 +1,7 @@
 import { useForm, type SubmitHandler } from "react-hook-form";
 import { useSearchParams } from "react-router";
 import { Title, Description, Form, Input } from "./search-styles";
+import searchIcon from "../../assets/Search.svg";
 
 type Inputs = {
   keyword: string;
@@ -32,6 +33,7 @@ const Search = () => {
 
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Input
+          icon={searchIcon}
           defaultValue={search ? search : ""}
           type="text"
           placeholder="Enter your keywords..."
