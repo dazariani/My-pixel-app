@@ -169,5 +169,10 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, '..', 'Frontend', 'dist', 'assets')]
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-CORS_ALLOW_ALL_ORIGINS = True
+# TODO: Replace with your frontend's actual URL after deployment
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "https://your-frontend-app.onrender.com",  # Replace with your frontend's URL
+]
 CORS_ALLOW_CREDENTIALS = True
