@@ -1,7 +1,7 @@
 import { useForm, type SubmitHandler } from "react-hook-form";
 import { useSearchParams } from "react-router";
 import { Title, Description, Form, Input } from "./search-styles";
-import searchIcon from "../../assets/Search.svg";
+import searchIcon from "../../assets/Search.svg?url";
 
 type Inputs = {
   keyword: string;
