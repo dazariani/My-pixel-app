@@ -27,14 +27,14 @@ const Form = styled.form`
   }
 `;
 
-const Input = styled.input<{ icon: string }>`
+const Input = styled.input<{ $icon: string }>`
   width: 45vw;
   border: 1px solid ${(props) => props.theme.light_grey};
   border-radius: 0.25rem;
   color: ${(props) => props.theme.dark_grey};
   font-size: 1rem;
   padding: 0.75rem 2.5rem 0.75rem 1rem;
-  background-image: url(${(props) => props.icon});
+  background-image: url(${(props) => props.$icon});
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
   background-size: 1.25rem;

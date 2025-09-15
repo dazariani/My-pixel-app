@@ -33,7 +33,7 @@ const Search = () => {
 
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Input
-          icon={searchIcon}
+          $icon={searchIcon}
           defaultValue={search ? search : ""}
           type="text"
           placeholder="Enter your keywords..."
